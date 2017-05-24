@@ -11,6 +11,8 @@
 
 [github]
         user = palomatanis
+	password = Lmjmla8h
+	oauth-token = 
 
 [web]
 	browser = google-chrome
