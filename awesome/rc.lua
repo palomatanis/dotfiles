@@ -54,7 +54,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 
 home = os.getenv("HOME")
 confdir = home .. "/.config/awesome"
-terminal = "gnome-terminal"
+terminal = "guake"
 editor = "emacs"
 gui_editor = "emacs"
 browser = "firefox"
@@ -250,9 +250,9 @@ globalkeys = awful.util.table.join(
         end),
     awful.key({ modkey,           }, "w", function () mymainmenu:show() end),
 
-    awful.key({modkey, }, "b", function() awful.util.spawn("xscreensaver-command -lock") end),
+    awful.key({ modkey,           }, "b", function() awful.util.spawn("xscreensaver-command -lock") end),
 
-    awful.key({ modkey,        }, "g",      function () os.execute("cd ~/Telegram; ./Telegram") end),
+    awful.key({ modkey,        }, "g",      function () os.execute("./Telegram/Telegram") end),
 
     
     -- Layout manipulation

@@ -1,6 +1,8 @@
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+export PATH=/home/paloma/.local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=/home/paloma/.oh-my-zsh
@@ -90,8 +92,8 @@ alias yogurt="yaourt"
 alias p="sudo pacman -S"
 alias u="yaourt -Syua"
 alias android="/opt/android-studio/bin/studio.sh"
-#alias usbnet="sudo dhcpcd enp0s20f0u3"
-alias usbnet="sudo dhcpcd enp55s0u2" ## Try ip link
+# probar enp0s20f0u3 enp55s0u2
+alias usbnet="sudo dhcpcd enp55s0u1" ## Try ip link
 alias gpom="git push origin master"
 alias l="ls -AhB"
 alias lll="ls -lAh1"
@@ -112,3 +114,5 @@ alias gs="git status"
 alias recoverBoot1="sudo cp /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi /boot/efi/EFI/Microsoft"
 alias recoverBoot2="sudo cp /boot/efi/EFI/grub/grubx64.efi /boot/efi/EFI/Microsoft/Boot/bootmgfw.efi"
 alias c="clion&"
+alias gitbonito="git log —graph —pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' —abbrev-commit"
+alias cleanPacman="pacman -Rns $(pacman -Qtdq)"
